@@ -326,7 +326,7 @@ if args.mode == 'train':
                 print(f"Model directory {model_dir} already exists. Skipping training.")
 
 elif args.mode == 'test':
-    selected_datasets = [args.dataset] if args.dataset else ['1_vs_all', '2_vs_all', '3_vs_all', '4_vs_all', '5_vs_all', '6_vs_all', '7_vs_all']
+    selected_datasets = [args.dataset] if args.dataset else ['./data_1', './data_2']
     selected_models = [args.model] if args.model else [ 'DenseNet201', 'EfficientNetB7', 
         'InceptionResNetV2', 'MobileNetV3Large', 'Xception'
     ]
