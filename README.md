@@ -38,6 +38,7 @@ This repository provides a comprehensive framework for training and testing Conv
    ```bash
    git clone https://github.com/L-A-Sandhu/<this-repo>.git
 # Navigate to the project directory:
+```bash
 cd <this-repo>
 
 # Install the required dependencies:
