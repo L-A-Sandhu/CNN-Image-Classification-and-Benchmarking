@@ -126,7 +126,14 @@ These metrics help you thoroughly **evaluate your CNN model’s performance** on
 
 ## Customization
 
-You can easily modify or add new models by including them in the `train_model()` and `test_model()` functions. Use pre-trained models from TensorFlow's `keras.applications`.
+This framework is highly flexible and allows you to easily customize or add new CNN models for your specific tasks. Simply modify the `train_model()` and `test_model()` functions to integrate additional architectures from **TensorFlow’s Keras applications** or custom-built models.
+
+- **How to Add New Models**: To include a new pre-trained model, import it from `keras.applications` and specify the desired input shapes and parameters. You can also fine-tune existing models by adding your own layers on top of the pre-trained base models.
+  
+- **Customization of Training and Testing Scripts**: You can modify the training or testing scripts to experiment with different **hyperparameters**, **loss functions**, and **optimization techniques**.
+
+This flexibility allows you to tailor the framework for **custom CNN models**, making it ideal for research or **specialized deep learning tasks**.
+
 
 ## Clear Model from Memory
 
