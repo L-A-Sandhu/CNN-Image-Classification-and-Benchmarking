@@ -56,13 +56,12 @@ data/
 
 ## Usage
 
-### Train the Model
+### Training the Model
 
-To train the model, use the following command:
+To train the model, run the following command:
 
 ```bash
 python script_name.py --mode train --dataset <dataset_name> --model <model_name> --threshold <threshold_value>
-exit 0
 
 This provides the complete block of code in Markdown, where:
 - The command for training the model is inside a **copyable code block**.
