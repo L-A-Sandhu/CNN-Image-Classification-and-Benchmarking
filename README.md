@@ -71,12 +71,15 @@ python script_name.py --mode train --dataset cats_vs_dogs --model EfficientNetB7
       ```
 ## Test the Model
  To test the model on a test dataset, use:
-   ```bash
+   ```
+
 python script_name.py --mode test --dataset <dataset_name> --model <model_name>
+   ```
 
 # Example:
-   ```bash
+   ```
 python script_name.py --mode test --dataset cats_vs_dogs --model EfficientNetB7
+   ```
 
 # Evaluation and Results
 -- The training process generates plots for accuracy and loss, saved in the ./checkpoint/<dataset>/<model>/history_plot.png.
