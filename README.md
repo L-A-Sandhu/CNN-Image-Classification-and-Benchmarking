@@ -70,8 +70,6 @@ python script_name.py --mode train --dataset <dataset_name> --model <model_name>
 - **`--model`**: CNN architecture to use (e.g., `EfficientNetB7`, `DenseNet201`).
 - **`--threshold`**: Threshold value for classification.
 
-
-
 # Example:
    ```
 python script_name.py --mode train --dataset cats_vs_dogs --model EfficientNetB7 --threshold 0.6
