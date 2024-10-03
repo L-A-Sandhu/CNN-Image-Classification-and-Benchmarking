@@ -1,16 +1,20 @@
-# CNN Model Training and Testing Framework
+# CNN Model Training and Testing Framework for Image Classification
 
-This repository provides a comprehensive framework for training and testing Convolutional Neural Network (CNN) models for image classification tasks. The framework supports multiple state-of-the-art CNN architectures, data augmentation, class balancing, and evaluation of model performance with various metrics such as accuracy, F1-score, precision, and recall.
+This repository offers a complete framework for training, testing, and benchmarking Convolutional Neural Network (CNN) models for **image classification**. It supports multiple state-of-the-art **pre-trained CNN architectures** and provides tools for **data augmentation**, **class balancing**, and advanced **performance evaluation metrics** like accuracy, F1-score, precision, and recall. Ideal for researchers and developers looking to quickly test and benchmark CNN models.
 
-## Features
-- **Multiple CNN Architectures**: Supports popular pre-trained models such as ConvNeXtXLarge, DenseNet201, EfficientNetB7, InceptionResNetV2, and many more.
-- **Class Balancing**: Automatically generates class weights to handle imbalanced datasets.
-- **Data Augmentation**: Includes advanced augmentation techniques like rotation, shear, zoom, and horizontal flips.
-- **Callbacks**: Integrated support for early stopping, model checkpoints, and learning rate reduction.
-- **Threshold Adjustment**: Fine-tune prediction thresholds to improve performance.
-- **Training History Visualization**: Save training history plots for accuracy and loss.
+## Key Features
+
+- **Support for Multiple CNN Architectures**: Train and test with popular pre-trained models like ConvNeXtXLarge, DenseNet201, EfficientNetB7, InceptionResNetV2, and many more for image classification tasks.
+- **Automatic Class Balancing**: Automatically generates class weights to manage imbalanced datasets and enhance CNN model accuracy.
+- **Advanced Data Augmentation**: Apply augmentation techniques like rotation, shear, zoom, and horizontal flips to improve model generalization during image classification.
+- **Integrated Callbacks for Efficient Training**: Supports early stopping, model checkpoints, and learning rate reduction to optimize deep learning model training.
+- **Threshold Adjustment**: Fine-tune prediction thresholds to improve classification performance in deep learning models.
+- **Training History Visualization**: Automatically save training history plots for accuracy and loss metrics, enabling easy performance monitoring.
 
 ## Supported Architectures
+
+This framework supports multiple **state-of-the-art CNN architectures**, allowing users to train and test models on various pre-trained architectures known for **image classification** performance. The following architectures are supported:
+
 - ConvNeXtXLarge
 - DenseNet201
 - EfficientNetB7
@@ -24,13 +28,16 @@ This repository provides a comprehensive framework for training and testing Conv
 - Xception
 
 ## Requirements
-- Python 3.x
-- TensorFlow >= 2.x
-- NumPy
-- Matplotlib
-- scikit-learn
-- argparse
-- json
+
+To use this **deep learning framework**, ensure that you have the following **dependencies** installed:
+
+- **Python 3.x**: Required for executing the framework's scripts and libraries.
+- **TensorFlow >= 2.x**: The main deep learning library used for training CNN models.
+- **NumPy**: For efficient numerical computation and data handling.
+- **Matplotlib**: Used to visualize the **training history** (accuracy and loss) during model training.
+- **scikit-learn**: Provides tools for model evaluation, including metrics like accuracy, F1-score, precision, and recall.
+- **argparse**: Enables easy command-line argument parsing for flexibility in running the scripts.
+- **json**: Required for handling configuration files and model parameters.
 
 ## Setup and Installation
 
@@ -94,16 +101,17 @@ python script_name.py --mode test --dataset cats_vs_dogs --model EfficientNetB7
 
 ## Evaluation and Results
 
-- **Plots for Accuracy and Loss:**
-  - The training process generates plots for accuracy and loss, saved in the `./checkpoint/<dataset>/<model>/history_plot.png`.
-  
-- **Evaluation Metrics:**
-  - The evaluation metrics are saved in `Results.txt` and `Results.json`, including:
-    - **Accuracy**
-    - **F1-score**
-    - **Precision**
-    - **Recall**
-    - **Confusion Matrix**
+- **Accuracy and Loss Plots**: The training process automatically generates plots for accuracy and loss, which are saved in the directory: `./checkpoint/<dataset>/<model>/history_plot.png`. These plots provide a visual representation of the model's training performance.
+
+- **Comprehensive Evaluation Metrics**: After testing, detailed evaluation metrics are saved in `Results.txt` and `Results.json`. These include:
+    - **Accuracy**: Measures the overall percentage of correct predictions.
+    - **F1-score**: Balances precision and recall, especially useful for imbalanced datasets.
+    - **Precision**: The proportion of positive identifications that are actually correct.
+    - **Recall**: The proportion of actual positives that are identified correctly.
+    - **Confusion Matrix**: Provides a detailed breakdown of model predictions across all classes.
+
+These metrics help you thoroughly **evaluate your CNN model’s performance** on the test dataset.
+
 
 ## Callbacks and Hyperparameter Tuning
 
