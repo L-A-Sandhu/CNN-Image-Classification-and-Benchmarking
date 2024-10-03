@@ -61,10 +61,10 @@ To train the model, use the following command:
 python script_name.py --mode train --dataset <dataset_name> --model <model_name> --threshold <threshold_value>
    ```
 
- --mode: Specify whether to train or test (train or test).
- --dataset: The name of the dataset directory (located under ./data/).
- --model: The name of the CNN model architecture.
- --threshold: The threshold value for classification (default is 0.55).
+ --mode: Specify whether to train or test (train or test).<br>
+ --dataset: The name of the dataset directory (located under ./data/).<br>
+ --model: The name of the CNN model architecture.<br>
+ --threshold: The threshold value for classification (default is 0.55).<br>
 
 # Example:
    ```
