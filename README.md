@@ -33,60 +33,56 @@ This repository provides a comprehensive framework for training and testing Conv
 - json
 
 ## Setup and Installation
+
 1. Clone the repository:
    ```bash
-   git clone https://github.com/L-A-Sandhu/<this repo>.git
-2. Navigate to the project directory:
-   ```bash
+   git clone https://github.com/L-A-Sandhu/<this-repo>.git
+# Navigate to the project directory:
+cd <this-repo>
 
-3. Navigate to the project directory:
-```bash
-cd<this repo>
-
-4. Install required dependencies:
-```bash
+# Install the required dependencies:
 pip install -r requirements.txt
-5. Ensure your dataset is structured as follows:
-```bash
+
+# Ensure your dataset is structured as follows:
 data/
-  ├── dataset_name/
-      ├── train/
-          ├── class_1/
-          ├── class_2/
-      ├── test/
-          ├── class_1/
-          ├── class_2/
+├── dataset_name/
+    ├── train/
+        ├── class_1/
+        ├── class_2/
+    ├── test/
+        ├── class_1/
+        ├── class_2/
 
-## Usage
-### Train the Model
+# Usage
+## Train the Model
 To train the model, use the following command:
-```bash
 python script_name.py --mode train --dataset <dataset_name> --model <model_name> --threshold <threshold_value>
---mode: Specify whether to train or test (train or test).
---dataset: The name of the dataset directory (located under ./data/).
---model: The name of the CNN model architecture.
---threshold: The threshold value for classification (default is 0.55).
-Example:
-```bash
+
+ --mode: Specify whether to train or test (train or test).
+ --dataset: The name of the dataset directory (located under ./data/).
+ --model: The name of the CNN model architecture.
+ --threshold: The threshold value for classification (default is 0.55).
+
+# Example:
 python script_name.py --mode train --dataset cats_vs_dogs --model EfficientNetB7 --threshold 0.6
-Test the Model
-To test the model on a test dataset, use:
-```bash
+
+## Test the Model
+ To test the model on a test dataset, use:
 python script_name.py --mode test --dataset <dataset_name> --model <model_name>
-Example:
-```bash
+
+# Example:
 python script_name.py --mode test --dataset cats_vs_dogs --model EfficientNetB7
-## Evaluation and Results
-The training process generates plots for accuracy and loss, saved in the ./checkpoint/<dataset>/<model>/history_plot.png.
-The evaluation metrics are saved in Results.txt and Results.json, including accuracy, F1-score, precision, recall, and confusion matrix.
-Callbacks and Hyperparameter Tuning
-ModelCheckpoint: Automatically saves the best model based on validation accuracy.
-EarlyStopping: Stops training when the validation accuracy does not improve for 5 consecutive epochs.
-ReduceLROnPlateau: Reduces the learning rate when validation loss stagnates.
-## Customization
-You can easily modify or add new models by including them in the train_model() and test_model() functions. Use pre-trained models from TensorFlow's keras.applications.
 
-## Clear Model from Memory
+# Evaluation and Results
+-- The training process generates plots for accuracy and loss, saved in the ./checkpoint/<dataset>/<model>/history_plot.png.
+-- The evaluation metrics are saved in Results.txt and Results.json, including accuracy, F1-score, precision, recall, and the confusion matrix.
+# Callbacks and Hyperparameter Tuning
+-- ModelCheckpoint: Automatically saves the best model based on validation accuracy.
+-- EarlyStopping: Stops training when the validation accuracy does not improve for 5 consecutive epochs.
+-- ReduceLROnPlateau: Reduces the learning rate when validation loss stagnates.
+
+# Customization
+#You can easily modify or add new models by including them in the train_model() and test_model() functions. Use pre-trained models from TensorFlow's keras.applications.
+
+# Clear Model from Memory
 To prevent memory issues when working with large models, the framework provides the clear_model() function that clears the model from memory after training or testing.
-
-
