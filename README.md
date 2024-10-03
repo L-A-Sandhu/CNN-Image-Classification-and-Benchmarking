@@ -92,16 +92,35 @@ python script_name.py --mode test --dataset <dataset_name> --model <model_name>
 python script_name.py --mode test --dataset cats_vs_dogs --model EfficientNetB7
 ~~~
 
-# Evaluation and Results
--The training process generates plots for accuracy and loss, saved in the ./checkpoint/<dataset>/<model>/history_plot.png.
--The evaluation metrics are saved in Results.txt and Results.json, including accuracy, F1-score, precision, recall, and the confusion matrix.
-# Callbacks and Hyperparameter Tuning
--ModelCheckpoint: Automatically saves the best model based on validation accuracy.
--EarlyStopping: Stops training when the validation accuracy does not improve for 5 consecutive epochs.
-ReduceLROnPlateau: Reduces the learning rate when validation loss stagnates.
+## Evaluation and Results
 
-# Customization
-You can easily modify or add new models by including them in the train_model() and test_model() functions. Use pre-trained models from TensorFlow's keras.applications.
+- **Plots for Accuracy and Loss:**
+  - The training process generates plots for accuracy and loss, saved in the `./checkpoint/<dataset>/<model>/history_plot.png`.
+  
+- **Evaluation Metrics:**
+  - The evaluation metrics are saved in `Results.txt` and `Results.json`, including:
+    - **Accuracy**
+    - **F1-score**
+    - **Precision**
+    - **Recall**
+    - **Confusion Matrix**
 
-# Clear Model from Memory
-To prevent memory issues when working with large models, the framework provides the clear_model() function that clears the model from memory after training or testing.
+## Callbacks and Hyperparameter Tuning
+
+- **ModelCheckpoint:**
+  - Automatically saves the best model based on validation accuracy.
+  
+- **EarlyStopping:**
+  - Stops training when the validation accuracy does not improve for 5 consecutive epochs.
+  
+- **ReduceLROnPlateau:**
+  - Reduces the learning rate when validation loss stagnates.
+
+## Customization
+
+You can easily modify or add new models by including them in the `train_model()` and `test_model()` functions. Use pre-trained models from TensorFlow's `keras.applications`.
+
+## Clear Model from Memory
+
+To prevent memory issues when working with large models, the framework provides the `clear_model()` function that clears the model from memory after training or testing.
+esting.
