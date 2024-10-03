@@ -53,6 +53,8 @@ data/
     ├── test/
         ├── class_1/
         ├── class_2/
+```
+
 
 # Usage
 ## Train the Model
