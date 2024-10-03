@@ -130,5 +130,10 @@ You can easily modify or add new models by including them in the `train_model()`
 
 ## Clear Model from Memory
 
-To prevent memory issues when working with large models, the framework provides the `clear_model()` function that clears the model from memory after training or testing.
-esting.
+When working with large-scale **CNN models** and **high-dimensional datasets**, memory management becomes crucial. To avoid memory overflow and ensure smooth execution, this framework provides a `clear_model()` function, which safely clears the model from memory after training or testing.
+
+- **When to Use It**: Call this function after each training or testing session, especially when using large models like ConvNeXtXLarge or ResNetRS420, to free up GPU and RAM resources.
+  
+- **Why It’s Important**: Proper memory management helps prevent crashes, reduces hardware strain, and allows you to experiment with different models without restarting your session.
+
+This feature is essential for handling **large deep learning models** and maintaining efficient workflows.
