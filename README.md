@@ -53,15 +53,15 @@ data/
         ├── class_2/
 ```
 
-
 ## Usage
 
 ### Training the Model
 
 To train the model, run the following command:
 
-```bash
+~~~bash
 python script_name.py --mode train --dataset <dataset_name> --model <model_name> --threshold <threshold_value>
+~~~
 
 ### Command-Line Arguments:
 
@@ -69,6 +69,7 @@ python script_name.py --mode train --dataset <dataset_name> --model <model_name>
 - **`--dataset`**: Name of the dataset directory (inside the `data/` folder).
 - **`--model`**: CNN architecture to use (e.g., `EfficientNetB7`, `DenseNet201`).
 - **`--threshold`**: Threshold value for classification.
+
 
 # Example:
    ```
