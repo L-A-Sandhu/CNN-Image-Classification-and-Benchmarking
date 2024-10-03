@@ -71,7 +71,7 @@ python script_name.py --mode train --dataset <dataset_name> --model <model_name>
 - **`--threshold`**: Threshold value for classification.
 
 
-# Example:
+### Example:
 
 ~~~bash
 python script_name.py --mode train --dataset cats_vs_dogs --model EfficientNetB7 --threshold 0.6
@@ -86,7 +86,7 @@ python script_name.py --mode test --dataset <dataset_name> --model <model_name>
 
 ~~~
 
-# Example:
+### Example:
 
 ~~~bash
 python script_name.py --mode test --dataset cats_vs_dogs --model EfficientNetB7
@@ -101,7 +101,7 @@ python script_name.py --mode test --dataset cats_vs_dogs --model EfficientNetB7
 -- ReduceLROnPlateau: Reduces the learning rate when validation loss stagnates.
 
 # Customization
-#You can easily modify or add new models by including them in the train_model() and test_model() functions. Use pre-trained models from TensorFlow's keras.applications.
+You can easily modify or add new models by including them in the train_model() and test_model() functions. Use pre-trained models from TensorFlow's keras.applications.
 
 # Clear Model from Memory
 To prevent memory issues when working with large models, the framework provides the clear_model() function that clears the model from memory after training or testing.
