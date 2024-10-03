@@ -144,3 +144,32 @@ When working with large-scale **CNN models** and **high-dimensional datasets**, 
 - **Why It’s Important**: Proper memory management helps prevent crashes, reduces hardware strain, and allows you to experiment with different models without restarting your session.
 
 This feature is essential for handling **large deep learning models** and maintaining efficient workflows.
+
+## Frequently Asked Questions (FAQ)
+
+**Q1: What CNN architectures are supported by this framework?**
+A: This framework supports a wide range of **pre-trained CNN architectures** including ConvNeXtXLarge, EfficientNetB7, DenseNet201, InceptionResNetV2, and more. You can find the full list in the **Supported Architectures** section above.
+
+**Q2: Can I use this framework for image classification on custom datasets?**
+A: Yes! The framework is designed for flexibility and can be used with any custom dataset for **image classification**. Simply structure your dataset as outlined in the **Setup and Installation** section, and the framework will handle the rest.
+
+**Q3: How does this framework handle imbalanced datasets?**
+A: The framework automatically generates **class weights** to address class imbalance during training, ensuring that minority classes are properly accounted for during **CNN model training**.
+
+**Q4: What evaluation metrics are included in the framework?**
+A: After testing the model, the framework provides detailed evaluation metrics including **accuracy**, **F1-score**, **precision**, **recall**, and a **confusion matrix**. These metrics help assess the performance of your model on the test dataset.
+
+**Q5: Can I add new CNN models to the framework?**
+A: Absolutely! The framework is fully customizable. You can modify the `train_model()` and `test_model()` functions to add new **CNN architectures** or fine-tune pre-existing models using **TensorFlow’s Keras applications**.
+
+**Q6: How can I visualize the model’s training history?**
+A: The framework automatically saves **training history plots** for accuracy and loss in the `./checkpoint/<dataset>/<model>/history_plot.png` directory, making it easy to track and visualize model performance over time.
+
+## Conclusion
+
+This **CNN model training and testing framework** is designed to simplify the process of building, training, and evaluating CNN models for **image classification** tasks. With support for state-of-the-art architectures, advanced features like **class balancing** and **data augmentation**, and detailed performance metrics, this framework is ideal for both research and production-level projects.
+
+Feel free to **fork the repository**, experiment with different CNN models, and contribute to the project. We welcome suggestions, improvements, and new features!
+
+Don’t forget to ⭐ the repository if you find it useful.
+
