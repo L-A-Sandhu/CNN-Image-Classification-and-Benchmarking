@@ -57,6 +57,7 @@ data/
 # Usage
 ## Train the Model
 To train the model, use the following command:
+   ```bash
 python script_name.py --mode train --dataset <dataset_name> --model <model_name> --threshold <threshold_value>
 
  --mode: Specify whether to train or test (train or test).
