@@ -66,9 +66,9 @@ python script_name.py --mode train --dataset <dataset_name> --model <model_name>
  --threshold: The threshold value for classification (default is 0.55).
 
 # Example:
-   ```bash
+   ```
 python script_name.py --mode train --dataset cats_vs_dogs --model EfficientNetB7 --threshold 0.6
-
+      ```
 ## Test the Model
  To test the model on a test dataset, use:
    ```bash
