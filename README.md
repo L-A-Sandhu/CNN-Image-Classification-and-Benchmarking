@@ -111,18 +111,18 @@ python script_name.py --mode test --dataset cats_vs_dogs --model EfficientNetB7
     - **Confusion Matrix**: Provides a detailed breakdown of model predictions across all classes.
 
 These metrics help you thoroughly **evaluate your CNN model’s performance** on the test dataset.
-
-
 ## Callbacks and Hyperparameter Tuning
 
-- **ModelCheckpoint:**
-  - Automatically saves the best model based on validation accuracy.
+This framework includes **integrated callbacks** for better control of the training process and **hyperparameter tuning** to optimize CNN model performance:
+
+- **ModelCheckpoint**: Automatically saves the best model during training based on validation accuracy, ensuring that the most effective version of the model is retained for testing.
   
-- **EarlyStopping:**
-  - Stops training when the validation accuracy does not improve for 5 consecutive epochs.
-  
-- **ReduceLROnPlateau:**
-  - Reduces the learning rate when validation loss stagnates.
+- **EarlyStopping**: Stops training when the validation accuracy does not improve for 5 consecutive epochs, preventing overfitting and saving computational resources by halting unnecessary training.
+
+- **ReduceLROnPlateau**: Automatically reduces the learning rate when validation loss stagnates, helping the model to converge more effectively during the later stages of training.
+
+These callbacks provide essential tools for **CNN model optimization**, helping to achieve better results with fewer resources.
+
 
 ## Customization
 
