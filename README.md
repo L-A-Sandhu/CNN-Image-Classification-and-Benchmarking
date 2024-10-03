@@ -63,12 +63,13 @@ To train the model, run the following command:
 ```bash
 python script_name.py --mode train --dataset <dataset_name> --model <model_name> --threshold <threshold_value>
 
-This provides the complete block of code in Markdown, where:
-- The command for training the model is inside a **copyable code block**.
-- The explanations of the command line arguments are listed **below the code block**.
-- The example usage is given in a separate code block.
+### Command-Line Arguments:
 
-Now, users will see both the **command** they can copy and the **descriptions** for each argument clearly.
+- **`--mode`**: Operation mode. Use `train` for training.
+- **`--dataset`**: Name of the dataset directory (inside the `data/` folder).
+- **`--model`**: CNN architecture to use (e.g., `EfficientNetB7`, `DenseNet201`).
+- **`--threshold`**: Threshold value for classification.
+
 
 
 # Example:
